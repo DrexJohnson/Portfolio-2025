@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="lce-landscaping-site.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LCE Landscaping Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="lce-landscaping-site.css" />
 </head>
 <body>
-
-
- <div class="wix-iframe-container">
+  <div class="container">
+    <!-- Wix Iframe Container -->
+    <div class="wix-iframe-container">
       <iframe src="https://drexeljohnson5.wixsite.com/land" 
-       allow="fullscreen" 
-       title="Wix Site Preview"></iframe>
- </div>
- 
+              allowfullscreen 
+              title="Wix Site Preview">
+      </iframe>
+    </div>
 
+    <!-- VS Code Folder Section -->
+    <div class="portfolio-section">
+      <h2 class="portfolio-title">Project Documentation</h2>
+      <p class="portfolio-subtitle">VS Code-inspired case study</p>
 
+      <div class="tabs-container">
+        <!-- Tab Navigation -->
+        <div class="tab-navigation">
+          <button class="tab-button active" data-tab="brand-summary">🗂️ 01-Summary</button>
+          <button class="tab-button" data-tab="visual-system">🖍️ 02-Branding</button>
+          <button class="tab-button" data-tab="site-design">🌐 03-Hierarchy</button>
+          <button class="tab-button" data-tab="final-results">✅ 04-Results</button>
+        </div>
 
+        <!-- Tab Content -->
+        <div class="tab-content-container">
+          <section class="tab-content active" id="brand-summary">
+            <h3>Core Brand Information</h3>
+            <div class="content-grid"></div>
+          </section>
+          <section class="tab-content" id="visual-system">
+            <h3>Visual System</h3>
+            <div class="content-grid"></div>
+          </section>
+          <section class="tab-content" id="site-design">
+            <h3>Website Design</h3>
+            <div class="content-grid"></div>
+          </section>
+          <section class="tab-content" id="final-results">
+            <h3>Final Results</h3>
+            <div class="content-grid"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+  <!-- JavaScript for tab switching -->
+  <script src="script.js"></script>
 </body>
 </html>
